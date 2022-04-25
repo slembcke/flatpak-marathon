@@ -13,34 +13,33 @@ modules:
       - sha256: 475d589d51a7f8b3ba2ba4eda022b170e562ca3b760ee922c146b6c65856ef39
         type: archive
         url: https://boostorg.jfrog.io/artifactory/main/release/1.79.0/source/boost_1_79_0.tar.bz2
-    cleanup:
-      - /include
-      - /lib/debug
+    cleanup: ['/include', '/lib/debug']
   - shared-modules/glu/glu-9.json
   - name: alephone
     buildsystem: autotools
-    config-opts:
-      - --with-boost-libdir=/app/lib
+    config-opts: ['--with-boost-libdir=/app/lib']
     sources:
       - type: archive
         url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20220115/AlephOne-20220115.tar.bz2
         sha256: ca0f5e94c4493a49522fccbbbe512831ed21f88d08bc93b4e365509ca057c2ce
-    cleanup:
-      - /lib/debug
+    cleanup: ['/lib/debug']
   - name: game-data
     buildsystem: simple
     build-commands:
       - cp -r . /app/game-data
     sources:
       - type: git
-        url: https://github.com/Aleph-One-Marathon/data-marathon-2.git 
+        url: https://github.com/Aleph-One-Marathon/data-marathon-2.git
   - name: app-data
     buildsystem: simple
     build-commands:
       - install -D run.sh /app/bin/run.sh
+      - install -D app.desktop /app/share/applications/org.lhowon.alephone.marathon2.desktop
+      - install -D icon.png /app/share/icons/hicolor/512x512/apps/org.lhowon.alephone.marathon2.png
     sources:
-      - type: file
-        path: run.sh
+      - {type: file, path: run.sh}
+      - {type: file, path: app.desktop}
+      - {type: file, path: icon.png}
 finish-args:
   - --socket=x11
   - --device=dri
