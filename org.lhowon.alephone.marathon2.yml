@@ -44,3 +44,4 @@ finish-args:
   - --socket=x11
   - --device=dri
   - --socket=pulseaudio
+  - --filesystem=~/.alephone
