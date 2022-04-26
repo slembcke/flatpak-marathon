@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Marathon
+Exec=run.sh
+Icon=org.lhowon.alephone.marathon1
+Categories=X-Games

@@ -1,0 +1,9 @@
+name: alephone
+buildsystem: autotools
+config-opts: [--with-boost-libdir=/app/lib]
+sources:
+  - type: archive
+    url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20220115/AlephOne-20220115.tar.bz2
+    sha256: ca0f5e94c4493a49522fccbbbe512831ed21f88d08bc93b4e365509ca057c2ce
+# TODO is there any point including icons/man/mime when it's not a standalone engine build?
+cleanup: [/lib/debug, /share/icons, /share/man, /share/mime]

@@ -1,4 +1,4 @@
-app-id: org.lhowon.alephone.marathon3
+app-id: org.lhowon.alephone.marathon1
 runtime: org.freedesktop.Platform
 runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
@@ -13,17 +13,17 @@ modules:
       - cp -r . /app/game-data
     sources:
       - type: git
-        url: https://github.com/Aleph-One-Marathon/data-marathon-infinity
+        url: https://github.com/Aleph-One-Marathon/data-marathon.git
   - name: app-data
     buildsystem: simple
     build-commands:
       - install -D run.sh /app/bin/run.sh
-      - install -D marathon3.desktop /app/share/applications/org.lhowon.alephone.marathon3.desktop
-      - install -D icon3.png /app/share/icons/hicolor/512x512/apps/org.lhowon.alephone.marathon3.png
+      - install -D marathon1.desktop /app/share/applications/org.lhowon.alephone.marathon1.desktop
+      - install -D icon1.png /app/share/icons/hicolor/512x512/apps/org.lhowon.alephone.marathon1.png
     sources:
       - {type: file, path: run.sh}
-      - {type: file, path: marathon3.desktop}
-      - {type: file, path: icon3.png}
+      - {type: file, path: marathon1.desktop}
+      - {type: file, path: icon1.png}
 finish-args:
   - --device=dri
   - --socket=x11
