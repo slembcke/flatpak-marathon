@@ -1,5 +1,4 @@
 name: glu
-buildsystem: autotools
 config-opts: [--disable-static]
 sources:
   - type: archive

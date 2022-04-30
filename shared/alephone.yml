@@ -1,6 +1,20 @@
 name: alephone
-buildsystem: autotools
-config-opts: [--with-boost-libdir=/app/lib]
+# buildsystem: autotools
+config-opts:
+  - --with-boost-libdir=/app/lib
+  - --with-sdl_image
+  - --with-ffmpeg
+  - --with-mad
+  - --with-sndfile
+  - --with-vorbis
+  # Disabled for now. SMPEG 2 isn't compatible, and 1.x isn't trivial to build since it's ancient.
+  # - --with-smpeg
+  - --with-speex
+  - --with-alsa
+  - --with-curl
+  - --with-zzip
+  - --with-png
+  - --with-miniupnpc
 sources:
   - type: archive
     url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20220115/AlephOne-20220115.tar.bz2

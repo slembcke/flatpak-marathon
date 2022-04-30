@@ -1,0 +1,7 @@
+name: smpeg
+config-opts: [--disable-static]
+sources:
+  - type: archive
+    url: https://github.com/icculus/smpeg/archive/refs/heads/main.zip
+    sha256: 2d04af701e083dbd2fae41090b9c2f77b96af8703e25f90ddaeabde37be8623f
+# cleanup: [/include, /lib/*.la, /lib/debug, /lib/pkgconfig]
