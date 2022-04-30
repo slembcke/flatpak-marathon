@@ -6,14 +6,18 @@ command: run.sh
 modules:
   - shared/boost.yml
   - shared/glu.yml
+  - shared/mad.yml
+  - shared/zzip.yml
+  - shared/miniupnpc.yml
   - shared/alephone.yml
   - name: game-data
     buildsystem: simple
     build-commands:
       - cp -r . /app/game-data
     sources:
-      - type: git
-        url: https://github.com/Aleph-One-Marathon/data-marathon-2.git
+      - type: archive
+        url: https://github.com/Aleph-One-Marathon/data-marathon-2/archive/refs/heads/master.zip
+        sha256: b71db32ed47da1434fe6899fc975c90ef4222ba0b616d685f9ddb294959692bd
   - name: app-data
     buildsystem: simple
     build-commands:

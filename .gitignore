@@ -1,4 +1,4 @@
 .*
-build
-repo
+*.build
+*.repo
 *.flatpak
