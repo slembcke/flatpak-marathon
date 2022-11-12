@@ -1,0 +1,19 @@
+{
+    "name": "SDL2_image",
+    "config-opts": ["--disable-static"],
+    "rm-configure": true,
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.6.2.tar.gz",
+            "sha256": "5d91ea72b449a161821ef51464d0767efb6fedf7a773f923c43e483dc137e362"
+        },
+        {
+            "type": "script",
+            "dest-filename": "autogen.sh",
+            "commands": [
+                "AUTOMAKE=\"automake --foreign\" autoreconf -vfi"
+            ]
+        }
+    ]
+}
