@@ -8,12 +8,8 @@ modules:
   - shared/glu.yml
   - shared/mad.yml
   - shared/zzip.yml
-  - shared/SDL2.json
-    #- shared-modules/SDL/SDL-1.2.15.json
-  - shared/SDL2_net.json
-  - shared/SDL2_image.json
-  - shared/SDL2_ttf.json
   - shared/miniupnpc.yml
+  - shared/SDL2_net.json
   - shared/alephone.yml
   - name: game-data
     buildsystem: simple

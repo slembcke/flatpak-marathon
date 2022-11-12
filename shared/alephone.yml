@@ -3,7 +3,7 @@ name: alephone
 config-opts:
   - --with-boost-libdir=/app/lib
   - --with-sdl_image
-  - --with-ffmpeg
+  - --without-ffmpeg
   - --with-mad
   - --with-sndfile
   - --with-vorbis

@@ -9,6 +9,7 @@ modules:
   - shared/mad.yml
   - shared/zzip.yml
   - shared/miniupnpc.yml
+  - shared/SDL2_net.json
   - shared/alephone.yml
   - name: game-data
     buildsystem: simple
@@ -16,8 +17,8 @@ modules:
       - cp -r . /app/game-data
     sources:
       - type: archive
-        url: https://github.com/Aleph-One-Marathon/data-marathon-infinity/archive/refs/heads/master.zip
-        sha256: fc555e9438236112a0b549267a0b53947524b90780f123e54ed689771bcc52c1
+        url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20220115/MarathonInfinity-20220115-Data.zip
+        sha256: d345a9fb2f9bf36b9967c7cd794dcde5400a964d1277549f00418be91a7255ff
   - name: app-data
     buildsystem: simple
     build-commands:
