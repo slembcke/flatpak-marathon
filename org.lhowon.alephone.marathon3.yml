@@ -20,8 +20,10 @@ modules:
         url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20220115/MarathonInfinity-20220115-Data.zip
         sha256: d345a9fb2f9bf36b9967c7cd794dcde5400a964d1277549f00418be91a7255ff
   - name: app-data
+  - name: app-data
     buildsystem: simple
     build-commands:
+      - install -Dm0644 "${FLATPAK_ID}.xml" "${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml"
       - install -D run.sh /app/bin/run.sh
       - install -D marathon3.desktop /app/share/applications/org.lhowon.alephone.marathon3.desktop
       - install -D icon3.png /app/share/icons/hicolor/512x512/apps/org.lhowon.alephone.marathon3.png
@@ -29,6 +31,7 @@ modules:
       - {type: file, path: run.sh}
       - {type: file, path: marathon3.desktop}
       - {type: file, path: icon3.png}
+      - {type: file, path: metainfo/org.lhowon.alephone.marathon3.xml}
 finish-args:
   - --device=dri
   - --socket=x11
