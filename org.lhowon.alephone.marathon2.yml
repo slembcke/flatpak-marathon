@@ -16,9 +16,11 @@ modules:
     build-commands:
       - cp -r . /app/game-data
     sources:
-      - type: archive
+      - type: extra-data
+        size: 29710307
         url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20220115/Marathon2-20220115-Data.zip
         sha256: 513e4ede85ced80fb2700a3d8fa01abeeba76a24311d192e8a4c9b8ca57770af
+        filename: gamedata.zip
   - name: app-data
     buildsystem: simple
     build-commands:
