@@ -3,7 +3,7 @@ name: alephone
 config-opts:
   - --with-boost-libdir=/app/lib
   - --with-sdl_image
-  - --without-ffmpeg
+  - --with-ffmpeg
   - --with-mad
   - --with-sndfile
   - --with-vorbis
@@ -17,7 +17,7 @@ config-opts:
   - --with-miniupnpc
 sources:
   - type: archive
-    url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20220115/AlephOne-20220115.tar.bz2
-    sha256: ca0f5e94c4493a49522fccbbbe512831ed21f88d08bc93b4e365509ca057c2ce
+    url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20221126/AlephOne-20221126.tar.bz2
+    sha256: f42caa31f650d72aba960c67791388bacf2d695ba1025eb1b612fecb0686e76d
 # TODO is there any point including icons/man/mime when it's not a standalone engine build?
 cleanup: [/lib/debug, /share/icons, /share/man, /share/mime]
