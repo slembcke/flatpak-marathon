@@ -36,6 +36,7 @@ modules:
 finish-args:
   - --device=dri
   - --socket=x11
+  - --socket=wayland
   - --socket=pulseaudio
   - --share=network
   - --filesystem=home
