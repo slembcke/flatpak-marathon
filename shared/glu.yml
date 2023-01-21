@@ -2,6 +2,6 @@ name: glu
 config-opts: [--disable-static]
 sources:
   - type: archive
-    url: https://gitlab.freedesktop.org/mesa/glu/-/archive/master/glu-master.tar.gz
-    sha256: be7e2f8369e8c3a524cad862d522bc0bf5a0ce7322359fafa373b8ba7a5b57a0
+    url: https://gitlab.freedesktop.org/mesa/glu/-/archive/glu-9.0.2/glu-glu-9.0.2.tar.gz
+    sha256: 332d93a16376bc007e8232a8e5534da84e548cf3db9de040442c47a21f4625ba
 cleanup: [/include, /lib/*.la, /lib/debug, /lib/pkgconfig]

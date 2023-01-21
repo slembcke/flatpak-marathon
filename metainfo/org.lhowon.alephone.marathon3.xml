@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.lhowon.alephone.marathon3</id>
+  
+  <name>Marathon Infinity</name>
+  <summary>Bungie&apos;s Marathon Infinity FPS game</summary>
+  
+  <metadata_license>FSFAP</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+  
+  <description>
+    <p>
+      Aleph One is the open source continuation of Bungie&apos;s Marathon 2 FPS game engine. Aleph One plays Marathon, Marathon 2, Marathon Infinity, and 3rd-party content on a wide array of platforms, with (optional) OpenGL rendering, Internet play, Lua scripting, and more.
+    </p>
+    <p>
+      Binary releases and scenario files are available at the Aleph One web site:
+    </p>
+    <p>
+      https://alephone.lhowon.org/
+    </p>
+    <p>
+      For more information and instructions on compiling from source, check out the Aleph One wiki: https://github.com/Aleph-One-Marathon/alephone/wiki
+    </p>
+  </description>
+  
+  <launchable type="desktop-id">org.lhowon.alephone.marathon3.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://alephone.lhowon.org/images/infinity_collage.png</image>
+    </screenshot>
+  </screenshots>
+</component>

@@ -1,6 +1,6 @@
 app-id: org.lhowon.alephone.marathon3
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 command: run.sh
 modules:
@@ -9,18 +9,22 @@ modules:
   - shared/mad.yml
   - shared/zzip.yml
   - shared/miniupnpc.yml
+  - shared/SDL2_net.json
   - shared/alephone.yml
   - name: game-data
     buildsystem: simple
     build-commands:
       - cp -r . /app/game-data
     sources:
-      - type: archive
-        url: https://github.com/Aleph-One-Marathon/data-marathon-infinity/archive/refs/heads/master.zip
-        sha256: fc555e9438236112a0b549267a0b53947524b90780f123e54ed689771bcc52c1
+      - type: extra-data
+        size: 32204262
+        url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20230119/MarathonInfinity-20230119-Data.zip
+        sha256: d3ec68921cd675733e2f80c18d69df3555d9bdee27d57fc0abaaf13460056f74
+        filename: gamedata.zip
   - name: app-data
     buildsystem: simple
     build-commands:
+      - install -Dm0644 "${FLATPAK_ID}.xml" "${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml"
       - install -D run.sh /app/bin/run.sh
       - install -D marathon3.desktop /app/share/applications/org.lhowon.alephone.marathon3.desktop
       - install -D icon3.png /app/share/icons/hicolor/512x512/apps/org.lhowon.alephone.marathon3.png
@@ -28,9 +32,11 @@ modules:
       - {type: file, path: run.sh}
       - {type: file, path: marathon3.desktop}
       - {type: file, path: icon3.png}
+      - {type: file, path: metainfo/org.lhowon.alephone.marathon3.xml}
 finish-args:
   - --device=dri
   - --socket=x11
+  - --socket=wayland
   - --socket=pulseaudio
   - --share=network
   - --filesystem=home
