@@ -18,8 +18,8 @@ modules:
     sources:
       - type: extra-data
         size: 29711060
-        url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20221126/Marathon2-20221126-Data.zip
-        sha256: eb1ae2500612f8e47f95c869cfbc6d3f6ed3e538db669b9049d3fd4125267271
+        url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20230119/Marathon2-20230119-Data.zip
+        sha256: 55b7e4e702e0bcd1195b606884c63998f5da45b3651f125d58b613b04f024b02
         filename: gamedata.zip
   - name: app-data
     buildsystem: simple

@@ -17,7 +17,7 @@ config-opts:
   - --with-miniupnpc
 sources:
   - type: archive
-    url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20221126/AlephOne-20221126.tar.bz2
-    sha256: f42caa31f650d72aba960c67791388bacf2d695ba1025eb1b612fecb0686e76d
+    url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20230119/AlephOne-20230119.tar.bz2
+    sha256: ac2f517d652896c2a3286b096868f43da3be2781cd17f81085de7a5daa5c3026
 # TODO is there any point including icons/man/mime when it's not a standalone engine build?
 cleanup: [/lib/debug, /share/icons, /share/man, /share/mime]

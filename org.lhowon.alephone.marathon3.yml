@@ -18,8 +18,8 @@ modules:
     sources:
       - type: extra-data
         size: 32204262
-        url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20221126/MarathonInfinity-20221126-Data.zip
-        sha256: e85927ead6109bf101ea790c281146639e8ba108262f05ed1ad47178a81cae82
+        url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20230119/MarathonInfinity-20230119-Data.zip
+        sha256: d3ec68921cd675733e2f80c18d69df3555d9bdee27d57fc0abaaf13460056f74
         filename: gamedata.zip
   - name: app-data
     buildsystem: simple
