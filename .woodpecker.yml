@@ -1,0 +1,11 @@
+steps:
+  shellcheck:
+    image: alpine:latest
+    commands:
+      - apk add flatpak-builder
+      - flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo    
+      - flatpak install --noninteractive -y org.freedesktop.Sdk//23.08 org.freedesktop.Platform//23.08
+      - make
+      - echo "$${SSHKEY}" > ~/.ssh/id_ed25519
+      - rsync -a maraton*.flatpak git@104.238.133.35:/var/www/htdocs/adamthiede.com/Files/marthon
+
