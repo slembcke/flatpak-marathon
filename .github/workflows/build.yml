@@ -15,7 +15,7 @@ jobs:
         run: |
           sudo apt install -qq -y bash rsync podman flatpak elfutils coreutils slirp4netns rootlesskit binfmt-support fuse-overlayfs flatpak-builder qemu-user-static
           sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-          sudo flatpak install --noninteractive --arch=aarch64 flathub org.freedesktop.Platform//23.08 org.freedesktop.Sdk//23.08 -y
+          sudo flatpak install --noninteractive flathub org.freedesktop.Platform//23.08 org.freedesktop.Sdk//23.08 -y
       - name: build flatpak
         shell: bash
         run: |
