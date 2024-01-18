@@ -1,6 +1,6 @@
 app-id: org.lhowon.alephone.marathon3
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: run.sh
 modules:
@@ -18,8 +18,8 @@ modules:
     sources:
       - type: extra-data
         size: 32204262
-        url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20230119/MarathonInfinity-20230119-Data.zip
-        sha256: d3ec68921cd675733e2f80c18d69df3555d9bdee27d57fc0abaaf13460056f74
+        url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20231125/MarathonInfinity-20231125-Data.zip
+        sha256: cac5fb0f2a3f8a8500a3dac898fce69a3870909f334c69a7e44efba566598e86
         filename: gamedata.zip
   - name: app-data
     buildsystem: simple

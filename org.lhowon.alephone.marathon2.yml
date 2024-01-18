@@ -1,6 +1,6 @@
 app-id: org.lhowon.alephone.marathon2
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: run.sh
 modules:
@@ -18,8 +18,8 @@ modules:
     sources:
       - type: extra-data
         size: 29711060
-        url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20230119/Marathon2-20230119-Data.zip
-        sha256: 55b7e4e702e0bcd1195b606884c63998f5da45b3651f125d58b613b04f024b02
+        url: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20231125/Marathon2-20231125-Data.zip
+        sha256: ba0b31e7d923dddf69eb09ea223dda9698e13e86a24b4a76c8109da307ed1833
         filename: gamedata.zip
   - name: app-data
     buildsystem: simple
