@@ -4,7 +4,7 @@ build-commands:
   - ./bootstrap.sh --prefix=/app --with-libraries=filesystem,system
   - ./b2 install
 sources:
-  - sha256: 475d589d51a7f8b3ba2ba4eda022b170e562ca3b760ee922c146b6c65856ef39
+  - sha256: cc4b893acf645c9d4b698e9a0f08ca8846aa5d6c68275c14c3e7949c24109454
     type: archive
-    url: https://boostorg.jfrog.io/artifactory/main/release/1.79.0/source/boost_1_79_0.tar.bz2
+    url: https://boostorg.jfrog.io/artifactory/main/release/1.84.0/source/boost_1_84_0.tar.bz2
 cleanup: [/include, /lib/*.a, /lib/debug, /lib/cmake]
